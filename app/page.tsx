@@ -25,7 +25,7 @@ export default function Home() {
 
   const handleWhatsApp = () => {
     window.open(
-      "https://wa.me/8075159094?text=Hi%20CODE%20LEAF%2C%20I%27d%20like%20to%20discuss%20a%20project",
+      "https://wa.me/918075159094?text=Hi%20CODE%20LEAF%2C%20I%27d%20like%20to%20discuss%20a%20project",
       "_blank",
     )
   }
