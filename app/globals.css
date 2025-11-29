@@ -1,0 +1,127 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Updated to exact Code Leaf logo background color (#0a4b57) */
+  --background: #fffbf5;
+  --foreground: #0a4b57;
+  --card: #ffffff;
+  --card-foreground: #0a4b57;
+  --popover: #ffffff;
+  --popover-foreground: #0a4b57;
+  --primary: #0a4b57;
+  --primary-foreground: #f4e8d4;
+  --secondary: #f4e8d4;
+  --secondary-foreground: #0a4b57;
+  --muted: #f4e8d4;
+  --muted-foreground: #0a4b57;
+  --accent: #f4e8d4;
+  --accent-foreground: #0a4b57;
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.577 0.245 27.325);
+  --border: #e8dcc8;
+  --input: #e8dcc8;
+  --ring: #0a4b57;
+  --chart-1: #0a4b57;
+  --chart-2: #f4e8d4;
+  --chart-3: #0d5f6d;
+  --chart-4: #107382;
+  --chart-5: #138898;
+  --radius: 0.625rem;
+  --sidebar: #fffbf5;
+  --sidebar-foreground: #0a4b57;
+  --sidebar-primary: #0a4b57;
+  --sidebar-primary-foreground: #f4e8d4;
+  --sidebar-accent: #f4e8d4;
+  --sidebar-accent-foreground: #0a4b57;
+  --sidebar-border: #e8dcc8;
+  --sidebar-ring: #0a4b57;
+}
+
+.dark {
+  /* Updated dark mode to match exact logo color */
+  --background: #0a4b57;
+  --foreground: #f4e8d4;
+  --card: #083d47;
+  --card-foreground: #f4e8d4;
+  --popover: #083d47;
+  --popover-foreground: #f4e8d4;
+  --primary: #f4e8d4;
+  --primary-foreground: #0a4b57;
+  --secondary: #0d5f6d;
+  --secondary-foreground: #f4e8d4;
+  --muted: #0d5f6d;
+  --muted-foreground: #c8bda4;
+  --accent: #f4e8d4;
+  --accent-foreground: #0a4b57;
+  --destructive: oklch(0.396 0.141 25.723);
+  --destructive-foreground: oklch(0.637 0.237 25.331);
+  --border: #0d5f6d;
+  --input: #0d5f6d;
+  --ring: #f4e8d4;
+  --chart-1: #0a4b57;
+  --chart-2: #f4e8d4;
+  --chart-3: #0d5f6d;
+  --chart-4: #107382;
+  --chart-5: #138898;
+  --sidebar: #083d47;
+  --sidebar-foreground: #f4e8d4;
+  --sidebar-primary: #f4e8d4;
+  --sidebar-primary-foreground: #0a4b57;
+  --sidebar-accent: #0d5f6d;
+  --sidebar-accent-foreground: #f4e8d4;
+  --sidebar-border: #0d5f6d;
+  --sidebar-ring: #f4e8d4;
+}
+
+@theme inline {
+  --font-sans: "Geist", "Geist Fallback";
+  --font-mono: "Geist Mono", "Geist Mono Fallback";
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
