@@ -37,7 +37,7 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] })
 //   },
 // }
 export const metadata: Metadata = {
-  title: "Code Leaf - Custom Software & Web Development from Kochi",
+  title: "CodeLeaf — Custom Software & Web Development Company in Kochi",
   description:
     "Custom software, web apps, and automation solutions for schools, businesses, and startups. Serving global clients with affordable full-stack development.",
   generator: "v0.app",
